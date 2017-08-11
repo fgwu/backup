@@ -1,0 +1,12 @@
+[global]
+bs=4k
+ioengine=sync
+iodepth=512
+size=4g
+direct=1
+#directory=/mnt/nvme
+filename=/dev/nvme0n1
+name=nvme_4k_read
+numjobs=16
+group_reporting
+rw=randread
